@@ -11,3 +11,7 @@ Aplikasi ini adalah prototipe antarmuka pengguna (UI) berbasis web yang berfungs
 * **Interaktivitas Cepat:** Pengguna dapat dengan mudah menambah tugas melalui *modal pop-up* dan mengubah status tugas (menandai selesai atau menghapus) hanya dengan satu klik.
 
 Secara teknis, aplikasi ini dibangun murni menggunakan **HTML, CSS, dan JavaScript (Vanilla JS)** untuk mendemonstrasikan **DOM Manipulation** dan **Event Handling**.
+
+## 📸 Tangkapan Layar Aplikasi
+
+![Tangkapan Layar Aplikasi Planner Mahasiswa](ssweb.png)
