@@ -15,3 +15,8 @@ Secara teknis, aplikasi ini dibangun murni menggunakan **HTML, CSS, dan JavaScri
 ## 📸 Tangkapan Layar Aplikasi
 
 ![Tangkapan Layar Aplikasi Planner Mahasiswa](ssweb.png)
+
+## 🔗 Tautan Desain Figma
+
+* **Desain UI/Mockup Aplikasi:** https://www.figma.com/board/eY2XweUDgU2T6iHaA3Ujrf/WORKFLOW-UTS?node-id=0-1&t=xdC1R4DtpvzKAUum-1
+* **Diagram Alir (Workflow/Flow):** https://www.figma.com/design/mpMgH4zZJuabAYSewljYAw/UTS---Pemograman-Front-End?node-id=3-17&t=xdC1R4DtpvzKAUum-1
