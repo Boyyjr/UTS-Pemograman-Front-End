@@ -1,0 +1,262 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    flex-grow: 1;
+    width: 100%
+}
+
+footer {
+    text-align: center;
+    padding: 20px; 
+    background-color: #e9ecef;
+    color: #6c757d;
+}
+
+.planner-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.planner-controls h2 {
+    margin: 0;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.task-list-container h3 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    color: #007bff;
+}
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+.task-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task-item.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
+.task-item span {
+    font-size: 1.1em;
+}
+.task-item span em {
+    font-size: 0.9em;
+    color: #555;
+    margin-left: 10px;
+}
+.task-buttons button {
+    margin-left: 10px;
+}
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+}
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+}
+
+.form-group input[type="submit"] {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.header-logo-container {
+    position: absolute;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.header-logo-container img {
+    height: 85px;
+    margin-right: 12px;
+}
+
+.logo-text-stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-text-stack span {
+    font-size: 1rem; 
+    font-weight: 600;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.2; 
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    cursor: pointer;
+    color: transparent;
+    background: transparent;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        position: static;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .header-logo-container {
+        position: static;
+        left: auto;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .header-logo-container img {
+        height: 45px;
+    }
+    
+    .logo-text-stack span {
+        font-size: 0.9rem;
+    }
+
+    main {
+        width: auto;
+        max-width: 100%;
+        margin: 20px 0;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .planner-controls {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .modal-content {
+        padding: 20px;
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    .form-group input {
+        box-sizing: border-box;
+    }
+
+    .task-list-container h3 {
+        font-size: 1.1rem;
+    }
+
+    .task-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
